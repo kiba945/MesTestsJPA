@@ -11,6 +11,7 @@ import javax.persistence.OneToMany;
 
 import org.afpa59.patrice.utils.DateUser;
 
+
 @Entity
 public class Commande extends Entite{
 
@@ -20,13 +21,8 @@ public class Commande extends Entite{
 	@Column(name = "code_cde")
 	private String codeCde;
 
-//	@Column(name = "date_cde")
-//	private DateUser dateCde = new DateUser();
-
-	@Column(name = "date_facture")
-	private DateUser dateFact;
-	//	
-	//	private boolean etatFacture;	
+	@Column(name = "date_cde")
+	private DateUser dateCde = new DateUser();	
 
 	@ManyToOne	// Plusieurs commandes pour un client
 	@JoinColumn(name = "code_client")
