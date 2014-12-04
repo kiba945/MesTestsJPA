@@ -20,13 +20,13 @@ public class MonJDBC02{
 		int code;
 		String designation;
 		float prix;
-		String st;
+//		String st;
 
 		try {
 
 			Statement state = SuperMethode();
 
-			ResultSet result;
+//			ResultSet result;
 
 			code = ES.saisie("\n********** CREATION D'UN ARTICLE **********\n\n"
 					+ "\nCode Article: ", 1, Integer.MAX_VALUE);
